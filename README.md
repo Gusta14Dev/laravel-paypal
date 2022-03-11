@@ -7,7 +7,8 @@ For more information about the package, see the official package: https://github
 ## Installation
 
 1. No seu composer.json acrescente
-`"require": {
+```json
+"require": {
         "gusta14dev/paypal": "*"
     },
  "repositories": [
@@ -15,7 +16,7 @@ For more information about the package, see the official package: https://github
             "type": "vcs",
             "url": "https://github.com/Gusta14Dev/laravel-paypal"
         }
- ],`
+ ],```
 
 2. Next, add the service provider to `app/config/app.php` in the `providers` array.
 
