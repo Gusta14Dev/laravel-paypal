@@ -36,6 +36,6 @@ For more information about the package, see the official package: https://github
     'Paypal' => Netshell\Paypal\Facades\Paypal::class,
 )
 ```
-##For more information
+## For more information
 
 For the use of the package see the link of the official repository.
