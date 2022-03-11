@@ -6,7 +6,7 @@ For more information about the package, see the official package: https://github
 
 ## Installation
 
-1. No seu composer.json acrescente
+1. In your composer.json add
 ```json
 "require": {
         "gusta14dev/paypal": "*"
@@ -36,38 +36,6 @@ For more information about the package, see the official package: https://github
     'Paypal' => Netshell\Paypal\Facades\Paypal::class,
 )
 ```
-##Configuration
+##For more information
 
-Use the `$apiContext->setConfig()` method to pass in your PayPal details.
-Below is one example of sandbox configuration in a controller constructor:
-```php
-    private $_apiContext;
-
-    public function __construct()
-    {
-        $this->_apiContext = PayPal::ApiContext(
-            config('services.paypal.client_id'),
-            config('services.paypal.secret'));
-		
-		$this->_apiContext->setConfig(array(
-			'mode' => 'sandbox',
-			'service.EndPoint' => 'https://api.sandbox.paypal.com',
-			'http.ConnectionTimeOut' => 30,
-			'log.LogEnabled' => true,
-			'log.FileName' => storage_path('logs/paypal.log'),
-			'log.LogLevel' => 'FINE'
-		));
-
-    }
-
-```
-
-Given you have set your developer information in `config/services.php`:
-```
-'paypal' => [
-	'client_id' => 'Client_ID',
-	'secret' => 'Your_secret'
-],
-
-```
 For the use of the package see the link of the official repository.
